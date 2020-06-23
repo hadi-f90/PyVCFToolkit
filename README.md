@@ -21,4 +21,4 @@ etc.
 By the way, Always make back ups and use it on your own risk.
 
 
-Finally,I grant you the permission to share, redistribute, and change it for your personal none-commerical use without any warranty.
+Finally, I grant you the permission to share, redistribute, and change it for your personal none-commerical use without any warranty.
