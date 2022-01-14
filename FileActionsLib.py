@@ -73,18 +73,15 @@ class PowerDirectory(object):
                             max_size,
                             list_of_files
                             ):
-        '''Returns a list files filtered by the min & max size given.
+            '''Returns a list files filtered by the min & max size given.
            The size must be in bytes format.'''
 
-        if list_of_files in ([], None):
-            directory = self.file_subdir_list
-        filtered_list = []
-
-        for item in self.file_subdir_list:
-           if min_size < item.stat()[6] < max_size:
-                filtered_list.append(item)
-
-        return filtered_list
+            if list_of_files in ([], None):
+                directory = self.file_subdir_list
+            return [
+                item for item in self.file_subdir_list
+                if min_size < item.stat()[6] < max_size
+            ]
 
 
 
